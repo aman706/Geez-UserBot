@@ -1,5 +1,5 @@
 """ Init file which loads all of the modules """
-from userbot import LOGS
+from Ironx import LOGS
 
 
 def __list_all_modules():

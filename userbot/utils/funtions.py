@@ -5,8 +5,7 @@ from os.path import basename
 from typing import Optional, Tuple
 from youtubesearchpython import VideosSearch
 
-# For using gif , animated stickers and videos in some parts , this
-# function takes  take a screenshot and stores ported from userge
+
 
 
 async def take_screen_shot(video_file: str, duration: int, path: str = '') -> Optional[str]:
@@ -53,7 +52,7 @@ async def ytsearch(query, limit):
     return result
 
 
-# https://github.com/pokurt/LyndaRobot/blob/7556ca0efafd357008131fa88401a8bb8057006f/lynda/modules/helper_funcs/string_handling.py#L238
+
 
 
 async def extract_time(cat, time_val):

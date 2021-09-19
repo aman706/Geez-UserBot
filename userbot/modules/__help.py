@@ -1,7 +1,7 @@
 import logging
 
-from userbot import BOT_USERNAME
-from userbot.events import register
+from Ironx import BOT_USERNAME
+from Ironx.events import register
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s",
@@ -20,9 +20,9 @@ async def yardim(event):
             await event.delete()
         else:
             await event.edit(
-                "`Botnya tidak berfungsi! Silahkan atur Bot Token dan Username dengan benar. Modul telah dihentikan.`"
+                "`The bot is not working! Please set Bot Token and Username correctly. The module has been discontinued.`"
             )
     except Exception:
         return await event.edit(
-            "`Anda tidak dapat mengirim hasil sebaris dalam obrolan ini (disebabkan oleh SendInlineBotResultRequest)`"
+            "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
         )

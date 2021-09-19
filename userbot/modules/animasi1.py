@@ -1,8 +1,8 @@
 
 
 from time import sleep
-from userbot import CMD_HELP, bot
-from userbot.events import register
+from Ironx import CMD_HELP, bot
+from Ironx.events import register
 from telethon import events
 import asyncio
 

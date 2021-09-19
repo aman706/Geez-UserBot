@@ -1,8 +1,4 @@
-# Copyright (C) 2020 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
+
 
 import asyncio
 import json
@@ -15,9 +11,9 @@ from aiohttp import ClientSession
 from bs4 import BeautifulSoup
 from requests import get
 
-from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
-from userbot.events import register
-from userbot.utils import chrome, human_to_bytes, humanbytes, md5, time_formatter
+from Ironx import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
+from Ironx.events import register
+from Ironx.utils import chrome, human_to_bytes, humanbytes, md5, time_formatter
 
 GITHUB = "https://github.com"
 

@@ -1,9 +1,9 @@
 import asyncio
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
-from userbot.utils.tools import is_admin
-import userbot.modules.sql_helper.antiflood_sql as sql
-from userbot.events import register
+from Ironx.utils.tools import is_admin
+import Ironx.modules.sql_helper.antiflood_sql as sql
+from Ironx.events import register
 
 
 CHAT_FLOOD = sql.__load_flood_settings()

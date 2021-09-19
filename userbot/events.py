@@ -1,8 +1,5 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
-#
+
+
 """ Userbot module for managing events.
  One of the main components of the userbot. """
 
@@ -14,7 +11,7 @@ from traceback import format_exc
 
 from telethon import events
 
-from userbot import LOGSPAMMER, bot
+from Ironx import LOGSPAMMER, bot
 
 
 def register(**args):
@@ -77,13 +74,11 @@ def register(**args):
             try:
                 await func(check)
 
-            # Thanks to @kandnub for this HACK.
-            # Raise StopPropagation to Raise StopPropagation
             # This needed for AFK to working properly
 
             except events.StopPropagation:
                 raise events.StopPropagation
-            # This is a gay exception and must be passed out. So that it doesnt
+            # This is a exception and must be passed out. So that it doesnt
             # spam chats
             except KeyboardInterrupt:
                 pass
@@ -96,11 +91,11 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**Geez-Project ERROR**\n"
-                    link = "Silahkan chat: @VckyouuBitch"
-                    text += "Untuk melaporkan kesalahan"
-                    text += f"tinggal teruskan pesan ini {link}.\n"
-                    text += "Vcky Siap Membantu Kamu\n"
+                    text = "**Ironx-Project ERROR**\n"
+                    link = "support chat: ironman_support1"
+                    text += "To report an error"
+                    text += f"just forward this message {link}.\n"
+                    text += "wea are ready to help you\n"
 
                     ftext = "========== DISCLAIMER =========="
                     ftext += "\nThis file uploaded ONLY here,"

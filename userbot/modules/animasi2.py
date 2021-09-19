@@ -12,9 +12,9 @@ from re import sub
 import requests
 from cowpy import cow
 
-from userbot import CMD_HELP
-from userbot.events import register
-from userbot.modules.admin import get_user_from_event
+from Ironx import CMD_HELP
+from Ironx.events import register
+from Ironx.modules.admin import get_user_from_event
 
 # ================= CONSTANT =================
 METOOSTR = [

@@ -1,6 +1,6 @@
 from telethon import events
-from userbot.events import register
-from userbot import CMD_HELP
+from Ironx.events import register
+from Ironx import CMD_HELP
 
 PRINTABLE_ASCII = range(0x21, 0x7F)
 
@@ -28,5 +28,5 @@ async def _(event):
 CMD_HELP.update({
     "aeshtetic":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙`.ae <teks>`\
-    \n↳ : Mengubah fonts teks"
+    \n↳ : Change text fonts"
 })

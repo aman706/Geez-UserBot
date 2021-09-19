@@ -1,4 +1,4 @@
-# https://github.com/andy-gh/prettyjson/blob/master/prettyjson.py
+
 
 
 def prettyjson(obj, indent=2, maxlinelength=80):

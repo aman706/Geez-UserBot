@@ -1,7 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
+
 
 import math
 import os
@@ -11,9 +8,9 @@ from subprocess import PIPE, Popen
 import aria2p
 from requests import get
 
-from userbot import CMD_HELP, LOGS, TEMP_DOWNLOAD_DIRECTORY
-from userbot.events import register
-from userbot.utils import humanbytes
+from Ironx import CMD_HELP, LOGS, TEMP_DOWNLOAD_DIRECTORY
+from Ironx.events import register
+from Ironx.utils import humanbytes
 
 
 def subprocess_run(cmd):

@@ -1,4 +1,4 @@
-""" Userbot initialization. """
+
 
 import logging
 import os
@@ -458,15 +458,15 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**Geez - Project**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Welcome to\n**HAS BEEN ACTIVATED!- Project**\n\If you want to know more, please join \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/GeezProject"),
+                                       "t.me/ironman_support1"),
                             Button.url("🚨 Group support",
-                                       "t.me/GeezSupportGroup")],
+                                       "t.me/ironman_support1")],
                         [Button.url("👤 Development",
-                                    "t.me/VckyouuBitch")],
+                                    "t.me/theprofessor_isback")],
                     ]
                 )
 
@@ -501,34 +501,35 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Geez-Project"):
+                    "@IRONMAN_SUPPORT1"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=geezlogo,
                     link_preview=False,
-                    text=f"⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : VCKYOUUU **".format(
+                    text=f"⚡IRONX-USERBOT⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : AMAN **".format(
+                   
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
-                    text="Daftar Plugins",
+                    "Help From ⚡IRONX-USERBOT⚡ ",
+                    text="LIST Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
-                    text="""**⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n Anda Bisa Membuat Geez Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " ⚡IRONX-USERBOT⚡ ",
+                    text="""**⚡IRONX-USERBOT⚡\n\nYou Can Create Your Own IRONX Userbot By:** __SIGNS BELOW!__""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡",
-                                "https://github.com/vckyou/Geez-Userbot"),
+                                "⚡IRONX-USERBOT⚡",
+                                "https://github.com/aman706/IRONX-USERBOT"),
                             custom.Button.url(
                                 "OWNER",
-                                "t.me/Vckyouubitch")]],
+                                "t.me/THEPROFESSOR_ISBACK")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -547,7 +548,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"!WARNING!🚫 Don't Use Own {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -564,9 +565,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/GeezProject"),
+                                       "t.me/IRONMAN_SUPPORT1"),
                             Button.url("🚨 Group support",
-                                       "t.me/GeezSupportGroup")],
+                                       "t.me/IRONMAN_SUPPORT1")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
@@ -595,7 +596,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"🚫!!WARNING!🚫 Don't Use Own{DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -627,14 +628,14 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"🚫!!WARNING!🚫 Don't Use Own{DEFAULTUSER}."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
         LOGS.info(
-            "Mode Inline Bot Mu Nonaktif. "
-            "Untuk Mengaktifkannya, Silahkan Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
+            "Mode Inline Bot MODE OFF. "
+            "To activate it, please go to @BotFather Then, Settings Bot > Mode Inline > Turn On. ")
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException:

@@ -1,14 +1,9 @@
-# Copyright (C) 2020 azrim.
-# All rights reserved.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
+
 
 from bitlyshortener import Shortener
 from re import match
-from userbot import BITLY_TOKEN, BOTLOG, BOTLOG_CHATID
-from userbot.events import register
+from Ironx import BITLY_TOKEN, BOTLOG, BOTLOG_CHATID
+from Ironx.events import register
 
 
 @register(outgoing=True, pattern=r"^\.bitly(?: |$)(.*)")

@@ -1,5 +1,4 @@
-# based on https://gist.github.com/wshanshan/c825efca4501a491447056849dd207d6
-# Ported for ProjectAlf by Alfiananda P.A
+
 
 import os
 import random
@@ -11,8 +10,8 @@ from hachoir.parser import createParser
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import DocumentAttributeFilename
 
-from userbot import CMD_HELP, bot
-from userbot.events import register
+from Ironx import CMD_HELP, bot
+from Ironx.events import register
 
 bground = "black"
 
@@ -24,9 +23,9 @@ async def ascii(event):
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("`Balas Ke Gambar/Sticker/Video`")
+        await event.edit("`Reply To Image/Sticker/Video`")
         return
-    await event.edit("`Sedang Mendownload Media..`")
+    await event.edit("`Downloading Media..`")
     if reply_message.photo:
         IMG = await bot.download_media(
             reply_message,
@@ -56,7 +55,7 @@ async def ascii(event):
             "ascii.png",
         )
     try:
-        await event.edit("`Sedang Dalam Proses..`")
+        await event.edit("`In Process..`")
         list = await random_color()
         color1 = list[0]
         color2 = list[1]
@@ -133,17 +132,17 @@ async def _(event):
         global bground
         bground = BG
     else:
-        return await event.edit("`Mohon Masukkan Background Dari Ascii`")
-    await event.edit(f"`Berhasil Setel Background Dari Ascii Ke` **{BG}**")
+        return await event.edit("`Please Enter Background From Ascii`")
+    await event.edit(f"`Successfully Set Background From Ascii To` **{BG}**")
 
 
 CMD_HELP.update(
-    {
-        "ascii": "`.ascii`\n"
-        "Usage: Buat Ascii Art Dari Media\n\n"
-        "`.asciis`\n"
-        "Usage: Sama Tapi Unggah Hasilnya Sebagai Sticker\n\n"
-        "`.asciibg <color>`\n"
-        "Usage: Untuk Mengubah Warna Background Dari Modul Ascii Contoh `.asciibg black`"
-    }
+   {
+         "ascii": "`.ascii`\n"
+         "Usage: Create Ascii Art From Media\n\n"
+         "`.asciis`\n"
+         "Usage: Same But Upload Result As Sticker\n\n"
+         "`.asciibg <color>`\n"
+         "Usage: To Change Background Color Of Ascii Module Example `.asciibg black`"
+     }
 )

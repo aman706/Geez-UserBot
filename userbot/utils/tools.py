@@ -7,7 +7,7 @@ from os.path import basename
 import os.path
 from html_telegraph_poster import TelegraphPoster
 from typing import Optional, Union
-from userbot import bot, LOGS
+from CC import bot, LOGS
 
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator, DocumentAttributeFilename
@@ -151,8 +151,8 @@ async def run_cmd(cmd: list) -> tuple[bytes, bytes]:
 
 def post_to_telegraph(title, html_format_content):
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "Geez-UserBot"
-    auth_url = "https://github.com/vckyou/Geez-UserBot"
+    auth_name = "Ironx-UserBot"
+    auth_url = "https://github.com/aman706/IRONX-USERBOT"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
         title=title,

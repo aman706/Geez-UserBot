@@ -1,17 +1,13 @@
-# Credit by https://github.com/sandy1709/catuserbot
-# Ported by @X_ImFine
-# Recode by @VckyouuBitch
-# From Geez - Project
 
 import base64
 from asyncio import sleep
 
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, LOGS
-from userbot.events import register
-from userbot.modules.sql_helper import broadcast_sql as sql
-from userbot.utils import parse_pre
+from Ironx import BOTLOG, BOTLOG_CHATID, CMD_HELP, LOGS
+from  Ironx.events import register
+from  Ironx.modules.sql_helper import broadcast_sql as sql
+from  Ironx.utils import parse_pre
 
 
 @register(outgoing=True, pattern=r"^\.sendto ?(.*)")
@@ -328,24 +324,24 @@ async def catbroadcast_delete(event):
 
 
 CMD_HELP.update(
-    {
-        "siaran": "**𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : **`siaran`\
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.sendto` <category_name>\
-        \n  **Usage : **akan mengirim pesan balasan ke semua obrolan dalam kategori yang diberikan.\
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.fwdto` <category_name>\
-        \n  **Usage : **akan meneruskan pesan yang dibalas ke semua obrolan di kategori berikan. \
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.addto` <category name>\
-        \n  **Usage : **Ini akan menambahkan obrolan / pengguna / saluran ini ke kategori nama yang diberikan. \
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.rmfrom` <category name>\
-        \n  **Usage : **Untuk menghapus Obrolan / pengguna / saluran dari nama kategori yang diberikan. \
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.list` <category_name>\
-        \n  **Usage : **Akan menampilkan daftar semua obrolan dalam kategori yang diberikan. \
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.listall`\
-        \n  **Usage : **Akan menampilkan daftar semua nama kategori. \
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.frmfrom` <category_name/chat_id>\
-        \n  **Usage : **Untuk memaksa menghapus chat_id yang diberikan dari nama kategori yang diberikan berguna ketika Anda meninggalkan obrolan itu atau melarang Anda di sana \
-        \n\n  **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.delc` <category_name>\
-        \n  **Usage : **Menghapus kategori sepenuhnya di database \
+   {
+        "broadcast": "**𝘾𝙤𝙢𝙢𝙖𝙣𝙙 : **`broadcast`\
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.sendto` <category_name>\
+        \n **Usage : **will send a reply message to all chats in the given category.\
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.fwdto` <category_name>\
+        \n **Usage : **will forward the reply message to all chats in the given category. \
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.addto` <category name>\
+        \n **Usage : **This will add this chat/user/channel to the given name category. \
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.rmfrom` <category name>\
+        \n **Usage : **To remove Chats / users / channels from given category names. \
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.list` <category_name>\
+        \n **Usage : **Will show a list of all chats in the given category. \
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.listall`\
+        \n **Usage : **Will display a list of all category names. \
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.frmfrom` <category_name/chat_id>\
+        \n **Usage : **To force delete a given chat_id from a given category name is useful when you leave that chat or ban you there \
+        \n\n **𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `.delc` <category_name>\
+        \n **Usage : **Delete category completely in database \
     "
     }
 )

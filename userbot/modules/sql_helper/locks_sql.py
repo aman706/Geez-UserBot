@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, Column, String
 
-from userbot.modules.sql_helper import BASE, SESSION
+from Ironx.modules.sql_helper import BASE, SESSION
 
 
 class Locks(BASE):

@@ -1,16 +1,11 @@
-"""
-Anilist Search Plugin for Userbot
-Usage : .anilist animeName
-By :- @Zero_cool7870
-ported char, airing and manga by @sandy1709 and @mrconfused
-"""
+
 
 import json
 import re
 
 import requests
-from userbot.events import register
-from userbot import bot
+from Ironx.events import register
+from Ironx import bot
 
 
 def time_formatter(milliseconds: int) -> str:

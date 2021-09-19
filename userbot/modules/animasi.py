@@ -1,6 +1,6 @@
 from time import sleep
-from userbot import CMD_HELP
-from userbot.events import register
+from Ironx import CMD_HELP
+from Ironx.events import register
 
 
 @register(outgoing=True, pattern='^.sadboy(?: |$)(.*)')
@@ -87,13 +87,13 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "animasi2":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sadboy`\
-    \n↳ : Biasalah sadboy hikss\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.punten` dan `.pantau`\
-    \n↳ : Coba aja hehehe.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.idiot`\
-    \n↳ : u're ediot xixixi.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `kosong`\
-    \n↳ : Tunggu update selanjutnya kawan."
+     "animation2":
+     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sadboy`\
+     \n↳ : It's okay sadboy hiks\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.punten` and `.monitor`\
+     \n↳ : Just try hehehe.\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.idiot`\
+     \n↳ : u're edit xixixi.\
+     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `empty`\
+     \n↳ : Wait for the next update guys."
 })

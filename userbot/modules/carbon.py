@@ -1,5 +1,5 @@
 # Ported By @VckyouuBitch From Geez-Projects
-# Fixes BUGS, HEHE USAHA MEMANG TIDAK MENGHIANATI HASIL:)
+# Fixes BUGS, HEHE BUSINESS DOES NOT BREAK THE RESULTS :)
 
 
 import os
@@ -36,8 +36,8 @@ async def carbon_api(e):
     if pcode[8:]:
         pcode = str(pcode[8:])
     elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
+        pcode = str(textx.message) # Importing message to module
+    code = quote_plus(pcode) # Converting to urlencoded
     await e.edit("`Processing..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
@@ -72,13 +72,13 @@ async def carbon_api(e):
     await e.edit("`Processing..\n75%`")
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
+        wait sleep(0.5)
     await e.edit("`Processing..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
-        file,
+        files,
         caption="Made using [Carbon](https://carbon.now.sh/about/),\
         \na project by [Dawn Labs](https://dawnlabs.io/)",
         force_document=True,
@@ -88,22 +88,22 @@ async def carbon_api(e):
     os.remove('/root/userbot/.bin/carbon.png')
     driver.quit()
     # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+    await e.delete() # Deleting msg
 
 
 @register(outgoing=True, pattern="^.crb1")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(249%2C237%2C212%2C0)&t=synthwave-84&wt=none&l=application%2Fjson&ds=true&dsyoff=20px&dsblur=0px&wc=true&wa=true&pv=56px&ph=0px&ln=false&fl=1&fm=IBM%20Plex%20Mono&fs=14.5px&lh=153%25&si=false&es=4x&wm=false&code={code}'
+    CARBON = 'https://carbon.now.sh/?bg=rgba(249%2C237%2C212%2C0)&t=synthwave-84&wt=none&l=application%2Fjson&ds=true&dsyoff=20px&dsblur=0px&wc=true&wa=true&php=56px&ph= 0px&ln=false&fl=1&fm=IBM%20Plex%20Mono&fs=14.5px&lh=153%25&si=false&es=4x&wm=false&code={code}'
     global CARBONLANG
     textx = await e.get_reply_message()
     pcode = e.text
     if pcode[8:]:
         pcode = str(pcode[8:])
     elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
+        pcode = str(textx.message) # Importing message to module
+    code = quote_plus(pcode) # Converting to urlencoded
     await e.edit("`Processing..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
@@ -138,13 +138,13 @@ async def carbon_api(e):
     await e.edit("`Processing..\n75%`")
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
+        wait sleep(0.5)
     await e.edit("`Processing..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
-        file,
+        files,
         caption="Made using [Carbon](https://carbon.now.sh/about/),\
         \na project by [Dawn Labs](https://dawnlabs.io/)",
         force_document=True,
@@ -154,22 +154,22 @@ async def carbon_api(e):
     os.remove('/root/userbot/.bin/carbon.png')
     driver.quit()
     # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+    await e.delete() # Deleting msg
 
 
 @register(outgoing=True, pattern="^.crb2")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(239%2C40%2C44%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
+    CARBON = 'https://carbon.now.sh/?bg=rgba(239%2C40%2C44%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph= 56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
     global CARBONLANG
     textx = await e.get_reply_message()
     pcode = e.text
     if pcode[8:]:
         pcode = str(pcode[8:])
     elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
+        pcode = str(textx.message) # Importing message to module
+    code = quote_plus(pcode) # Converting to urlencoded
     await e.edit("`Processing..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
@@ -204,13 +204,13 @@ async def carbon_api(e):
     await e.edit("`Processing..\n75%`")
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
+        wait sleep(0.5)
     await e.edit("`Processing..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
-        file,
+        files,
         caption="Made using [Carbon](https://carbon.now.sh/about/),\
         \na project by [Dawn Labs](https://dawnlabs.io/)",
         force_document=True,
@@ -220,22 +220,22 @@ async def carbon_api(e):
     os.remove('/root/userbot/.bin/carbon.png')
     driver.quit()
     # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+    await e.delete() # Deleting msg
 
 
 @register(outgoing=True, pattern="^.crb3")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(74%2C144%2C226%2C1)&t=material&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}'
+    CARBON = 'https://carbon.now.sh/?bg=rgba(74%2C144%2C226%2C1)&t=material&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&fln=false&fln=false 1&fm=Fira%20Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code={code}'
     global CARBONLANG
     textx = await e.get_reply_message()
     pcode = e.text
     if pcode[8:]:
         pcode = str(pcode[8:])
     elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
+        pcode = str(textx.message) # Importing message to module
+    code = quote_plus(pcode) # Converting to urlencoded
     await e.edit("`Processing..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
@@ -270,13 +270,13 @@ async def carbon_api(e):
     await e.edit("`Processing..\n75%`")
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
+        wait sleep(0.5)
     await e.edit("`Processing..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
-        file,
+        files,
         caption="Made using [Carbon](https://carbon.now.sh/about/),\
         \na project by [Dawn Labs](https://dawnlabs.io/)",
         force_document=True,
@@ -286,22 +286,22 @@ async def carbon_api(e):
     os.remove('/root/userbot/.bin/carbon.png')
     driver.quit()
     # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+    await e.delete() # Deleting msg
 
 
 @register(outgoing=True, pattern="^.crb4")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(29%2C40%2C104%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
+    CARBON = 'https://carbon.now.sh/?bg=rgba(29%2C40%2C104%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph= 56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
     global CARBONLANG
     textx = await e.get_reply_message()
     pcode = e.text
     if pcode[8:]:
         pcode = str(pcode[8:])
     elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
+        pcode = str(textx.message) # Importing message to module
+    code = quote_plus(pcode) # Converting to urlencoded
     await e.edit("`Processing..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
@@ -336,13 +336,13 @@ async def carbon_api(e):
     await e.edit("`Processing..\n75%`")
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
+        wait sleep(0.5)
     await e.edit("`Processing..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
-        file,
+        files,
         caption="Made using [Carbon](https://carbon.now.sh/about/),\
         \na project by [Dawn Labs](https://dawnlabs.io/)",
         force_document=True,
@@ -352,22 +352,22 @@ async def carbon_api(e):
     os.remove('/root/userbot/.bin/carbon.png')
     driver.quit()
     # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+    await e.delete() # Deleting msg
 
 
 @register(outgoing=True, pattern="^.crb5")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
-    CARBON = 'https://carbon.now.sh/?bg=rgba(76%2C144%2C140%2C1)&t=night-owl&wt=none&l=coffeescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira%20Code&fs=14px&lh=133%25&si=false&es=2x&wm=false&code={code}'
+    CARBON = 'https://carbon.now.sh/?bg=rgba(76%2C144%2C140%2C1)&t=night-owl&wt=none&l=coffeescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=&lnph=56px&lnph=56px&lnph=56px false&fl=1&fm=Fira%20Code&fs=14px&lh=133%25&si=false&es=2x&wm=false&code={code}'
     global CARBONLANG
     textx = await e.get_reply_message()
     pcode = e.text
     if pcode[8:]:
         pcode = str(pcode[8:])
     elif textx:
-        pcode = str(textx.message)  # Importing message to module
-    code = quote_plus(pcode)  # Converting to urlencoded
+        pcode = str(textx.message) # Importing message to module
+    code = quote_plus(pcode) # Converting to urlencoded
     await e.edit("`Processing..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
@@ -402,13 +402,13 @@ async def carbon_api(e):
     await e.edit("`Processing..\n75%`")
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
-        await sleep(0.5)
+        wait sleep(0.5)
     await e.edit("`Processing..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Uploading..`")
     await e.client.send_file(
         e.chat_id,
-        file,
+        files,
         caption="Made using [Carbon](https://carbon.now.sh/about/),\
         \na project by [Dawn Labs](https://dawnlabs.io/)",
         force_document=True,
@@ -418,13 +418,13 @@ async def carbon_api(e):
     os.remove('/root/userbot/.bin/carbon.png')
     driver.quit()
     # Removing carbon.png after uploading
-    await e.delete()  # Deleting msg
+    await e.delete() # Deleting msg
 
 
 CMD_HELP.update({
     "carbon":
     "Command : `.carbon` <Text/Reply>\
-    \nUsage : atau anda juga bisa ketik .crb1 atau 2,3,4,5 untuk mengganti warna background anda.\
+    \nUsage : or you can also type .crb1 or 2,3,4,5 to change your background color.\
     \n\nCommand : .krblang <text>\
-    \nUsage : Percantik kode Anda menggunakan carbon.now.sh\nUse .krblang <text> untuk mengatur bahasa untuk kode Anda."
+    \nUsage : Beautify your code using carbon.now.sh\nUse .krblang <text> to set the language for your code."
 })
